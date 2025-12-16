@@ -19,7 +19,7 @@ int Carta::getValorNumerico() const {
     if (valor == "A") {
         return 11; // El As vale 11 por defecto, se ajusta en Mano si es necesario
     } else if (valor == "J" || valor == "Q" || valor == "K") {
-        return 10;
+        return 1; // Ahora las letras valen 1 punto
     } else {
         return stoi(valor); // Convierte string a int para cartas numéricas
     }
